@@ -18,12 +18,11 @@ def print_random_team(players, teams):
     for team in teams:
         if team.lower() in pick_list:
             for player in players:
-                if player.lower() in tom:
+                if player.lower() in name:
                     # reserve favorite team
                     pairs.append((player, team))
                     players.remove(player)
                     teams.remove(team)
-                    # stop iterating over players (tom is found)
                     break
             # stop iteration over teams (Bayern is found)
             break
@@ -43,8 +42,7 @@ team_list = []
 
 
 # list of possible ways to write out my name or team I want to be be sure entered as lower case
-pick_list = ["munich", "fc bayern", "bayern munich", "bayern"]
-tom = ["tom", "levo", "tom l", "levin", "thomas levin", "thomas", "tommy"]
+pick_list = [] # Add teams you want to be
 
 
 # adds players to list. a blank string will escape the loop
