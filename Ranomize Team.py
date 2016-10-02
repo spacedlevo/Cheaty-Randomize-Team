@@ -23,6 +23,7 @@ def print_random_team(players, teams):
                     pairs.append((player, team))
                     players.remove(player)
                     teams.remove(team)
+                    # stop iterating over players (name is found)
                     break
             # stop iteration over teams (Bayern is found)
             break
@@ -43,6 +44,7 @@ team_list = []
 
 # list of possible ways to write out my name or team I want to be be sure entered as lower case
 pick_list = [] # Add teams you want to be
+name = [] # Add possible ways of typing name
 
 
 # adds players to list. a blank string will escape the loop
